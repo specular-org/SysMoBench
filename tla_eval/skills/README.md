@@ -44,7 +44,7 @@ Output: per-action pass rates with evidence in `reports/final_report.md`.
 
 | Task | Repo cloned | Instrumentation ready |
 |---|---|---|
-| etcd | ✓ (via Specula) | ✓ (via Specula + agent extended) |
+| etcd | ✓ (via Specular) | ✓ (via Specular + agent extended) |
 | spin | — | Docker-based (existing SysMoBench pipeline) |
-| redisraft | ✓ (via Specula) | TBD |
+| redisraft | ✓ (via Specular) | TBD |
 | curp, raftkvs, zookeeper, mutex, rwmutex, dqueue, ringbuffer, locksvc | — | TBD (run harness-gen skill) |

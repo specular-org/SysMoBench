@@ -45,9 +45,9 @@ dev = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/specula-org/SysMoBench"
-Repository = "https://github.com/specula-org/SysMoBench"
-Issues = "https://github.com/specula-org/SysMoBench/issues"
+Homepage = "https://github.com/specular-org/SysMoBench"
+Repository = "https://github.com/specular-org/SysMoBench"
+Issues = "https://github.com/specular-org/SysMoBench/issues"
 
 [project.scripts]
 sysmobench = "tla_eval.cli:main"
