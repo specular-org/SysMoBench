@@ -23,7 +23,7 @@ Required on the host:
 Then install (a virtual environment is recommended on Python 3.12+ hosts that enforce PEP 668):
 
 ```
-git clone https://github.com/specula-org/SysMoBench.git
+git clone https://github.com/specular-org/SysMoBench.git
 cd SysMoBench
 python3 -m venv .venv && source .venv/bin/activate
 pip install -e .
@@ -35,8 +35,8 @@ Add the models you intend to evaluate to `config/models.yaml` (the file ships wi
 Alternatively, pull the prebuilt image (published per release tag):
 
 ```
-docker pull ghcr.io/specula-org/sysmobench:latest
-docker run --rm -it -e ANTHROPIC_API_KEY=$ANTHROPIC_API_KEY ghcr.io/specula-org/sysmobench:latest
+docker pull ghcr.io/specular-org/sysmobench:latest
+docker run --rm -it -e ANTHROPIC_API_KEY=$ANTHROPIC_API_KEY ghcr.io/specular-org/sysmobench:latest
 ```
 
 Or build it locally:

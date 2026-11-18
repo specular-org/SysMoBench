@@ -6,8 +6,8 @@ generated TLA+ specs.
 
 ## Where the code lives
 
-- **Specula case dir** (canonical instrumented source, shared with
-  Specula's own harness-gen pipeline):
+- **Specular case dir** (canonical instrumented source, shared with
+  Specular's own harness-gen pipeline):
   `/home/ubuntu/Specula/case-studies/redisraft/`
   Structure:
   - `harness/run.sh` — full build+trace driver (used as our inner harness)
@@ -18,7 +18,7 @@ generated TLA+ specs.
   - `artifact/redisraft/` — cloned github.com/RedisLabs/redisraft
   - `traces/` — inner harness output
 - **SysMoBench wrapper**: `scripts/harness/redisraft/run.sh` — thin shell that
-  calls the Specula harness and mirrors `.ndjson` files into
+  calls the Specular harness and mirrors `.ndjson` files into
   `artifacts/redisraft/traces/`.
 
 ## Emitted events
@@ -85,7 +85,7 @@ Build+run is fast — ~5 seconds on a warm tree, ~15 seconds cold.
 | Var          | Default                                         | Purpose                      |
 |--------------|-------------------------------------------------|------------------------------|
 | `TRACES_DIR` | `artifacts/redisraft/traces`                    | Where NDJSON files land      |
-| `REPO_PATH`  | `/home/ubuntu/Specula/case-studies/redisraft`   | Specula case dir (or copy)   |
+| `REPO_PATH`  | `/home/ubuntu/Specula/case-studies/redisraft`   | Specular case dir (or copy)   |
 
 When the tv-eval agent runs in a workspace copy, pass
 `REPO_PATH=<workspace>/repo` so it uses its own sandboxed tree.

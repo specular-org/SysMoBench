@@ -5,7 +5,7 @@ description: "Trace harness generation for SysMoBench. Use when bootstrapping a 
 
 Read `guide.md` for the full workflow methodology.
 
-## SysMoBench conventions (overrides Specula paths in guide.md)
+## SysMoBench conventions (overrides Specular paths in guide.md)
 
 - Cloned source lives at `artifacts/<task>/` (see `artifacts/README.md`).
 - The task's prompt at `tla_eval/tasks/<task>/prompts/` defines what must be modeled — the harness must emit events for each required behavior at the right granularity.

@@ -16,7 +16,7 @@ Pipeline:
     spawn a claude-code agent to run the /tv-eval skill on the repaired
     spec via scripts/launch_tv_eval.sh.
 
-Quota discipline (matches Specula's wait_for_quota pattern):
+Quota discipline (matches Specular's wait_for_quota pattern):
   Before every agent launch, check 5h and 7d utilization via the Anthropic
   OAuth usage endpoint. If 5h >= QUOTA_5H (default 90) or 7d >= QUOTA_7D
   (default 95), sleep until resets_at + 120s, repeat. Abort after
@@ -87,7 +87,7 @@ def log(msg: str) -> None:
 
 
 # ──────────────────────────────────────────────────────────
-# Quota check (matches Specula's usage.sh + wait_for_quota pattern)
+# Quota check (matches Specular's usage.sh + wait_for_quota pattern)
 # ──────────────────────────────────────────────────────────
 
 def _read_access_token(claude_alias: str) -> str | None:

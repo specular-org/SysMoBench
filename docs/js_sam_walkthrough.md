@@ -6,7 +6,7 @@
 
 ## 1. The project this plugs into
 
-**SysMoBench** (github.com/specula-org/SysMoBench) is a benchmark that asks one
+**SysMoBench** (github.com/specular-org/SysMoBench) is a benchmark that asks one
 question: *can an AI model read the source code of a real system and write a
 correct formal specification of its behavior?*
 

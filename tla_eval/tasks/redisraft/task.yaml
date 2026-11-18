@@ -57,7 +57,7 @@ tv:
     traces_output_env: "TRACES_DIR"
     traces_default_dir: "artifacts/redisraft/traces"
     instrumentation_doc: "tla_eval/tasks/redisraft/INSTRUMENTATION.md"
-    # The inner Specula harness writes to $REPO_PATH/traces/ — the wrapper
+    # The inner Specular harness writes to $REPO_PATH/traces/ — the wrapper
     # mirrors those files into TRACES_DIR.
     inner_harness: "harness/run.sh"
     trace_action_map:

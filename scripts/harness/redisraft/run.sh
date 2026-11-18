@@ -26,7 +26,7 @@ REPO_PATH="${REPO_PATH:-$PROJECT_ROOT/artifacts/redisraft}"
 TRACES_DIR="${TRACES_DIR:-$PROJECT_ROOT/artifacts/redisraft/traces}"
 
 if [[ ! -x "$REPO_PATH/harness/run.sh" ]]; then
-  echo "ERROR: Specula-style redisraft harness not found at $REPO_PATH/harness/run.sh" >&2
+  echo "ERROR: Specular-style redisraft harness not found at $REPO_PATH/harness/run.sh" >&2
   echo "Expected structure: \$REPO_PATH/{harness,artifact/redisraft}" >&2
   exit 1
 fi
